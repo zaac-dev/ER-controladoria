@@ -39,13 +39,53 @@
         margin-inline: auto;
     }
         & a {
-            font-size: 18px;
-            color: #fff;
-            padding-block: 16px;
+            width: 5rem;
             text-decoration: none;
-            justify-content: space-between;
-            align-items: center;
+            letter-spacing: 3px;
+            padding-inline: 1rem;
+            position: relative;
+            height: 3.5em;
+            border: 1px ridge #daa520;
+            outline: none;
+            background-color: transparent;
+            color: white;
+            transition: 1s;
+            border-radius: .8rem;
+            font-size: 1.8rem;
+            
     }
+
+    & a::after {
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: 3%;
+        width: 95%;
+        height: 40%;
+        background-color: var(--bg-color);
+        transition: 0.5s;
+        transform-origin: center;
+    }
+& a::before {
+        content: "";
+        transform-origin: center;
+        position: absolute;
+        top: 80%;
+        left: 3%;
+        width: 95%;
+        height: 40%;
+        background-color: var(--bg-color);
+        transition: 0.5s;
+    }
+
+    & a:hover::before, a:hover::after {
+        transform: scale(0)
+    }
+
+    & a:hover {
+        box-shadow: inset 0px 0px 25px #daa520;
+    }
+
     }
 
 @media (max-width: 750px) {
@@ -53,6 +93,29 @@
         & .hamburger {
             display: block;
             z-index: 1;
+        }
+
+        & a::after {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: 3%;
+            width: 95%;
+            height: 30%;
+            background-color: var(--bg-header);
+            transition: 0.5s;
+            transform-origin: center;
+        }
+    & a::before {
+            content: "";
+            transform-origin: center;
+            position: absolute;
+            top: 80%;
+            left: 3%;
+            width: 95%;
+            height: 30%;
+            background-color: var(--bg-header);
+            transition: 0.5s;
         }
 
         & .nav-list {
