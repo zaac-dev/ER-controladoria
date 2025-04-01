@@ -6,7 +6,7 @@
     justify-content: center;
     background-color: rgb(204, 196, 187);
     padding-bottom: 2rem;
-
+}
     h1 {
         text-align: center;
         margin-bottom: 5rem;
@@ -15,7 +15,7 @@
         border-bottom: 1px solid var(--color-h1);
     }
     
-    .cards-container {
+     .cards-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr); 
         gap: 4rem; 
@@ -39,7 +39,7 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-    }
+    
 
     .card:hover {
         border-radius: 15px;
