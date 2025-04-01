@@ -1,8 +1,10 @@
 #blog-section {
   width: 100%;
-  margin: 2rem auto;
+  margin: 0rem auto;
   padding: 1rem;
   text-align: center;
+  background-color: var(--bg-color);
+  
 }
 
 .title-blog {
@@ -15,6 +17,7 @@
 }
 
 .articles-container {
+  
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -28,8 +31,8 @@
   overflow: hidden;
   width: 30rem;
   height: 50rem;
-  border: 1px solid red;
   transition: transform 0.3s ease;
+  
 }
 
 .article-card:hover {

@@ -6,6 +6,7 @@
     padding: 50px 0;
     width: 100%;
     min-height: 100vh;
+    background-color: var(--bg-color);
 }
 
 #contato h1 {
@@ -15,7 +16,6 @@
     font-size: 4rem;
 }
 
-/* Estilização do formulário */
 .form {
     background-color: #074468fa;
     width: 70%; /* 70% da largura em desktop */

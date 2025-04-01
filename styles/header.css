@@ -1,6 +1,6 @@
     header {
     padding-inline: 16px;
-
+    background-color: var(--bg-color);
     & .nav {
         max-width: 1280px;
         height: 70px;
@@ -16,6 +16,10 @@
                 background: none;
                 border-top: 3px solid #fff;
                 cursor: pointer;
+        }
+
+        & .navlogo {
+            display: none;
         }
 
     & .hamburger::after,
@@ -92,9 +96,14 @@
     .nav {
         & .hamburger {
             display: block;
-            z-index: 1;
+            z-index: 1001;
+            
         }
 
+        & .navlogo {
+            display: block;
+            width: 7rem;
+        }
         & a::after {
             content: "";
             position: absolute;
@@ -105,6 +114,7 @@
             background-color: var(--bg-header);
             transition: 0.5s;
             transform-origin: center;
+            
         }
     & a::before {
             content: "";
@@ -119,6 +129,7 @@
         }
 
         & .nav-list {
+            
             position: fixed;
             top: 0;
             left: 0;
@@ -127,6 +138,7 @@
             background-color: var(--bg-header);
             clip-path: circle(100px at 90% -15%);
             transition: 1s ease-out;
+            z-index: 1000;
         
             flex-direction: column;
             justify-content: space-around;

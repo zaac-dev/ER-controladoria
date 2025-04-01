@@ -22,7 +22,7 @@
 
 
 body {
-    background-color: var(--bg-color);
+    background-color: rgb(204, 196, 187);
 }
 
 
@@ -36,6 +36,7 @@ html {
 h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway", sans-serif;
     color: var(--color-h1);
+    font-weight: 700;
     
 }
 

@@ -4,6 +4,8 @@
     align-items: center;
     width: 100%;
     justify-content: center;
+    background-color: rgb(204, 196, 187);
+    padding-bottom: 2rem;
 
     h1 {
         text-align: center;
