@@ -7,6 +7,7 @@
     background-color: rgb(204, 196, 187);
     padding-bottom: 2rem;
 }
+
     h1 {
         text-align: center;
         margin-bottom: 5rem;
@@ -39,7 +40,7 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-    
+    }
 
     .card:hover {
         border-radius: 15px;
@@ -140,7 +141,7 @@
     /* Responsividade */
     @media (max-width: 1024px) {
         .cards-container {
-            grid-template-columns: repeat(1, 1fr); 
+            grid-template-columns: repeat(2, 1fr); 
             
         }
     }
@@ -155,4 +156,4 @@
             margin-inline: auto;
         }
     }
-}
+
