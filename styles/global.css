@@ -17,6 +17,7 @@
     --border: #6673a7;
     --text-color-primary: #e2e2e2;
     --text-color-hover: #e2e2e2;
+    --color-h1: #daa520;
 }
 
 
@@ -33,5 +34,10 @@ html {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Playfair Display", serif;
+    font-family: "Raleway", sans-serif;
+    color: var(--color-h1);
+    
 }
+
+
+
