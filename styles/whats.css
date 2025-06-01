@@ -1,7 +1,7 @@
 /* Código CSS específico apenas para o botão de WhatsApp */
 .whatsapp-container {
     position: fixed;
-    bottom: 20px;
+    bottom: 70px;
     right: 20px;
     z-index: 1000; /* Garante que o botão fique acima de outros elementos */
   }

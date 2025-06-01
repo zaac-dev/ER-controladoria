@@ -43,6 +43,7 @@
     }
 
     .card:hover {
+        color: black;
         border-radius: 15px;
         cursor: pointer;
         transform: scale(1.05);
