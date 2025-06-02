@@ -42,7 +42,7 @@
     
     & .logo {
         margin-top: -6rem;
-        width: 45%;
+        width: 50%;
         height: 60%;
         display: flex;
         align-items: center;
@@ -52,7 +52,7 @@
         transition: all 0.4s;
         border-radius: .8rem;
         overflow: hidden;
-        padding-inline: 2rem;
+        padding: 2rem;
         justify-content: space-between;
 
         &:hover {
@@ -61,164 +61,68 @@
         
         & img {
             border-radius: 1rem;
-            width: 50%;
-            height: 60%;
+            max-width: 50%;
+            height: 50%;
         }
 
         & .text {
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
             & h1 {
                 color: var(--text-color-primary);
-                font-size: 3.5rem;
+                font-size: clamp(1.6rem, 4vw, 3rem);
                 font-weight: 600;
                 color: var(--color-h1);
                 margin-bottom: 5rem;
                 max-width: 100%;
             }
 
-            & p {
-                font-size: 2rem;
+            & .p {
+                font-size: clamp(1.2rem, 2.8vw, 1.8rem);
                 max-width: 100%;
-            }
-        }
-    }
-
-    /* Tablets e dispositivos médios */
-    @media (max-width: 1080px) and (min-width: 769px) {
-        & .apre {
-            img:first-child {
-                left: -10%;
-                width: 50rem;
-                height: 80rem;
-            }
-
-            img:last-child {
-                right: -10%;
-                width: 50rem;
-                height: 72rem;
-            }
-        }
-
-        & .logo {
-            margin-top: 50vh;
-            transform: translateY(-50%);
-            width: 100%;
-            height: auto;
-            min-height: 40vh;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            gap: 1rem;
-            padding: 1rem 2rem;
-            
-            & img {
-                width: 35rem;
-                height: 35rem;
-                object-fit: contain;
-            }
-            
-            & .text {
                 text-align: center;
-                width: 100%;
-                
-                & h1 {
-                    font-size: 2.8rem;
-                    margin-top: 2rem;
-                    line-height: 1.2;
-                }
-                
-                & p {
-                    font-size: 1.8rem;
-                    line-height: 1.4;
-                }
             }
         }
     }
 
-    /* Tablets pequenos */
-    @media (max-width: 768px) and (min-width: 481px) {
-        & .apre {
-            img:first-child {
-                left: -12%;
-                width: 50rem;
-                height: 80rem;
-            }
 
-            img:last-child {
-                right: -12%;
-                width: 50rem;
-                height: 72rem;;
-            }
-        }
-
-        & .logo {
-            margin-top: 50vh;
-            transform: translateY(-50%);
-            width: 100%;
-            height: auto;
-            min-height: 45vh;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            gap: 1rem;
-            padding: 1rem 2rem;
-            
-            & img {
-                width: 35rem;
-                height: 35rem;
-                object-fit: contain;
-            }
-            
-            & .text {
-                text-align: center;
-                width: 100%;
-                
-                & h1 {
-                    font-size: 2.4rem;
-                    margin-top: 2rem;
-                    line-height: 1.2;
-                }
-                
-                & p {
-                    font-size: 1.6rem;
-                    line-height: 1.4;
-                }
-            }
-        }
-    }
 
     /* Dispositivos móveis */
-    @media (max-width: 480px) {
+    @media (max-width: 768px) {
         & .apre {
-
+            overflow-x: hidden;
         
             & img:first-child {
                 left: -7rem;
-                width: 30rem;
-                height: 70rem;
-                top: -16rem;
+                width: 32rem;
+                height: 72rem;
+                top: -18rem;
             }
 
             & img:last-child {
                 right: -6rem;
                 width: 30rem;
                 height: 66rem;
-                top: -12rem;
+                top: -14rem;
             }
         }
 
         & .logo {
-            margin-top: 70vh;
+            margin-top: 38vh;
             width: 100%;
             height: auto;
-            min-height: 50vh;
-            flex-direction: row;
+            height: 80rem;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             gap: .5rem;
             padding: 1rem 1rem;
             
             & img {
-                margin-top: -20rem;
+                margin-top: -5rem;
                 width: 15rem;
                 height: 15rem;
                 object-fit: contain;
@@ -227,67 +131,28 @@
             & .text {
                 text-align: center;
                 width: 100%;
+                display: flex;
+                flex-direction: column;
                 
                 & h1 {
-                    margin-top: -5rem;
-                    font-size: 1.6rem;
+                    margin-top: -1rem;
+                    /*font-size: 1.6rem;*/
                     line-height: 1.2;
                 }
                 
-                & p {
+                & .p {
                     display: flex;
-                    font-size: 1.4rem;
-                    justify-content: center;
-                    align-items: center;
-                    border: 1px solid red;
-                     width: 120%;
                     margin: 0 auto;
+                    justify-content: center;
+                    /*font-size: 1.4rem;*/
+                    align-items: center;
+                    text-align: center;
+                    border: 1px solid red;
+                    width: 100%;
+                    
                 }
             }
         }
     }
 
-    /* Dispositivos muito pequenos */
-    @media (max-width: 320px) {
-        & .apre {
-            img:first-child {
-                left: -8%;
-                width: 45%;
-                height: 70%;
-            }
-
-            img:last-child {
-                right: -8%;
-                width: 45%;
-                height: 70%;
-            }
-        }
-
-        & .logo {
-            margin-top: 55vh;
-            transform: translateY(-50%);
-            width: 85%;
-            height: auto;
-            min-height: 45vh;
-            gap: 1.5rem;
-            padding: 1.5rem 1rem;
-            
-            & img {
-                width: 80%;
-                height: auto;
-                max-height: 8rem;
-            }
-            
-            & .text {
-                & h1 {
-                    font-size: 1.8rem;
-                    margin-bottom: 0.8rem;
-                }
-                
-                & p {
-                    font-size: 1.2rem;
-                }
-            }
-        }
-    }
 }
