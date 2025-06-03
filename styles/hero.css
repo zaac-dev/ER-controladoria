@@ -77,7 +77,7 @@
                 font-weight: 600;
                 color: var(--color-h1);
                 margin-bottom: 5rem;
-                max-width: 100%;
+                
             }
 
             & .p {
@@ -147,7 +147,6 @@
                     /*font-size: 1.4rem;*/
                     align-items: center;
                     text-align: center;
-                    border: 1px solid red;
                     width: 100%;
                     
                 }
