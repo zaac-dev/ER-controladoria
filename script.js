@@ -37,16 +37,15 @@ window.onclick = function(event) {
 
 const rolling = document.getElementById('rolling');
 
-// Duplica automaticamente as imagens só uma vez
-const base = rolling.innerHTML;
-while (rolling.scrollWidth < window.innerWidth * 2) {
-  rolling.innerHTML += base;
-}
+ //montagem da rolagem
+const duplications = 3;
+ for (let i = 0; i <duplications; i++) {
+rolling.innerHTML += base;
+ }
 
 
 let position = 0;
-const speed = 1; // px por frame
-
+const speed = 1; 
 function animateSlider() {
   position -= speed;
 
